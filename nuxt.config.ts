@@ -2,6 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
-    '@nuxtjs/eslint-module'
-  ]
-})
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
+  ],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    }
+  },
+});
